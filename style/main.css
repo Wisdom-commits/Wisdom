@@ -1,0 +1,13 @@
+
+ tbody tr:nth-of-type(2) td:nth-of-type(2) {
+    background-color: rgb(255, 0, 0);
+}
+tfoot * td {
+    background-color: red;
+}
+thead * th:nth-of-type(6) {
+    background-color: rgba(76, 0, 255, 0.493);
+}
+tbody tr:nth-of-type(4) * td:nth-of-type(5){
+    background-color: coral;
+}
