@@ -1,3 +1,3 @@
-# Wizzy
-# This is just a few of my work
-# I hope to know more
+# Wisdom
+# I hope to know more and learn me 
+
