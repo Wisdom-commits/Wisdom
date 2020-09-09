@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-System</title>
+</head>
+<body>
+    <style>
+        main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fx);
+        gap: 10px;
+       grid-auto-rows: 300px 150px;
+        }
+        main section{
+            background-color: #06a;
+            border: 3px groove rgba(255, 0, 0, 0.541);
+        }
+        .old001{
+            grid-row: 3/4;
+            grid-column: 1/4;
+                }
+
+        .old002{
+            grid-row: 1/2;
+            grid-column: 2/4;
+        }     
+         
+        .old003{
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+        
+        .old004{
+            grid-row: 4/6;
+            grid-column: 1/2;
+        }
+        .old005{
+            grid-row: 2/3;
+            grid-column: 3/4;
+        }
+        .old006{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+        .old007{
+            grid-area: 4/2/5/4;
+        }
+
+        .old008{
+            grid-area: 2/2/3/3;
+        }
+
+        .old009{
+            grid-area: 5/2/6/4;
+        }
+    </style>
+    <main>
+        <section class="old001">
+            <p>Hi001</p>
+        </section>
+        <section class="old002">
+            <p>Hi02</p>
+        </section>
+        <section class="old003">
+            <p>Hi03</p>
+        </section>
+        <section class="old004">
+            <p>Hi04</p>
+        </section>
+        <section class="old005">
+            <p>Hi05</p>
+        </section>
+        <section class="old006">
+            <p>Hi06</p>
+        </section>
+        <section class="old007">
+            <p>Hi07</p>
+        </section>
+        <section class="old008">
+            <p>Hi08</p>
+        </section>
+        <section class="old009">
+            <p>Hi09</p>
+        </section>
+    </main>
+</body>
+</html>
