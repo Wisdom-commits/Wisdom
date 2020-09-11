@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-3</title>
+</head>
+<body>
+    <style>
+        main{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 4fr);
+            gap: 10px;
+            grid-auto-rows: 100px;
+        }
+        main section{
+            background-color: rgba(43, 228, 105, 0.795);
+            border: 4px ridge rgba(238, 197, 17, 0.863);
+            text-decoration: underline;
+            text-align: center;
+            text-transform: capitalize;
+            color: rgb(218, 57, 57);
+            font-size: larger;
+        }
+    </style>
+    <main>
+    <section class="nice01">
+        <p>Hello001</p>
+    </section>
+    <section class="nice02">
+        <p>Hello002</p>
+    </section>
+    <section class="nice03">
+        <p>Hello003</p>
+    </section>
+    <section class="nice04">
+        <p>Hello004</p>
+    </section>
+    <section class="nice05">
+        <p>Hello005</p>
+    </section>
+    <section class="nice06">
+        <p>Hello006</p>
+    </section>
+    <section class="nice07">
+        <p>Hello007</p>
+    </section>
+</main>
+</body>
+</html>
