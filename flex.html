@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<body>
+    <style>
+        section{
+            display: flex;
+            gap: 10px;
+            height:60vh;
+        }
+        #flex{
+            flex-direction: row;
+            background-color: rgba(147, 21, 231, 0.89);
+        }
+        #flex:first-of-type{
+            background-color: rgba(186, 231, 21, 0.89);
+        }
+        #flex:last-of-type{
+            background-color: rgba(231, 123, 0, 0.911);
+        }
+    </style>
+    <main>
+        <section id="flex">
+            <div>01</div>
+            <div>02</div>
+            <div>03</div>
+            <div>04</div>
+        </section>
+        <section>
+            <aside>001</aside>
+            <aside>002</aside>
+            <aside>003</aside>
+            <aside>004</aside>
+            <aside>005</aside>
+        </section>
+    </main>
+</body>
+</html>
