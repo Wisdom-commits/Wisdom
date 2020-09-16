@@ -7,36 +7,27 @@
 </head>
 <body>
     <style>
-        section{
-            display: flex;
-            gap: 10px;
-            height:60vh;
-        }
-        #flex{
-            flex-direction: row;
-            background-color: rgba(147, 21, 231, 0.89);
-        }
-        #flex:first-of-type{
-            background-color: rgba(186, 231, 21, 0.89);
-        }
-        #flex:last-of-type{
-            background-color: rgba(231, 123, 0, 0.911);
-        }
+        #box-container {
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    height: 200px;
+    flex-grow: 2;
+  }
+  #box-2 {
+    background-color: orangered;
+    height: 200px;
+    flex-grow: 3;
+  }
     </style>
     <main>
-        <section id="flex">
-            <div>01</div>
-            <div>02</div>
-            <div>03</div>
-            <div>04</div>
-        </section>
-        <section>
-            <aside>001</aside>
-            <aside>002</aside>
-            <aside>003</aside>
-            <aside>004</aside>
-            <aside>005</aside>
-        </section>
+        <div id="box-container">
+            <div id="box-1">Hello</div>
+            <div id="box-2">Goodbye</div>
+          </div>
     </main>
 </body>
 </html>

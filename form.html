@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <table>Form</table>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="image/Me.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style/form.css">
 </head>
 <body>
-    <form action="">
+    <form action=""></form>
         <div>
         <h1>Application form</h1>
         </div>
             <fieldset>
-            <h2>Personal Information</h2>
-          <label>First Name;</label><input type="text" name="first" id="first name" required>
-          <label>Surname;</label><input type="text" name="surname" id="surname" required>
-          <label>Other Name;</label><input type="text" name="othername" id="othername" required>
+            <Legend>Personal Information</Legend>
+          <div><label>First Name;</label><input type="text" name="first" id="first name" required></div>
+          <div><label>Surname;</label><input type="text" name="surname" id="surname" required></div>
+          <div><label>Other Name;</label><input type="text" name="othername" id="othername" required></div>
         <p><legend>Marital Status</legend></p>
         <input type="radio" name="marital" id="single" checked>Single </br>
         <input type="radio" name="marital" id="married">Married</br>
         <input type="radio" name="marital" id="divorced">Divorced</br>
         <p><legend>Date of Birth</legend></p>
         <label for=""></label><input type="date" name="date" id="birth">
-        <p><legend>State of Origin</legend></p>
+        <legend>State of Origin</legend>
         <select name="SoO" id="state">
         <option value="choice"  selected>Choose your State</option>
         <option value="abia state">Abia State</option>
@@ -54,23 +54,22 @@
 <label for=""><abbr title="Local Government Area">L.G.A</abbr></label><input type="text" name="L.G.A" id="L.G.A" required>
     </fieldset>
     <fieldset>
-        <h3>Details</h3>
-    <label for="">Email Address:</label><input type="email" name="email" id="address" placeholder="example@gmail.com" required>
-    <label for="">Phone Number:</label><input type="number" name="phone" id="number" placeholder="08056830833" required>
-    <label for="">Address:</label><input type="text" name="addeess" id="address" required>
+        <legend>Details</legend>
+    <div><label for="">Email Address:</label><input type="email" name="email" id="email" placeholder="example@gmail.com" required></div>
+    <div><label for="">Phone Number:</label><input type="number" name="phone" id="number" placeholder="08056830833" required></div>
+    <div><label for="">Address:</label><input type="text" name="address" id="address" required></div>
 </fieldset>
     <fieldset>
-    <section>
-    <h3>Educational Detais</h3>
+    <legend>Educational Details</legend>
     <input type="checkbox" name="basic" id="school">Basic School
     <input type="checkbox" name="junior" id="school">Junior School
   <input type="checkbox" name="high" id="school" checked>High School
   <input type="checkbox" name="college" id="education">College
   <input type="checkbox" name="graduate" id="school">Graduate
   <input type="checkbox" name="prefer" id="not to">Prefer not to say
-</section>
 </fieldset>
-<footer><button type="submit">submit</button></footer>
+<footer><button type="submit">Submit</button></footer>
+<footer><button type="reset">Reset</button>    </footer>
 <footer>&copy;Wisdom Osewa</footer>
     </form>
 </body>

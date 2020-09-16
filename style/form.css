@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+h1{
+    text-align: center;
+    text-decoration: underline;
+    clear: both;
+    font-family: 'Lato', sans-serif;
+}
+legend{
+    font-family: 'Oswald', sans-serif;
+}
+p legend{
+    font-family: 'Playfair Display', serif;
+    
+}
+footer button{
+    float: right;
+    font-size: 20px;
+}
+body{
+    background: azure;
+}
+select{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+label, input{
+    font-family: 'Playfair Display', serif;
+    display: block;
+}
+fieldset:last-of-type input{
+    display: inline-block;
+    /* display: flex; */
+    margin-right: 7%;
+}
+fieldset div{
+    display: inline-block;
+    margin-right: 20%;
+    /* padding: 2%; */
+}
