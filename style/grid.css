@@ -1,0 +1,9 @@
+.old001{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-decoration: none;
+}
+.old001 a{
+    text-decoration: none;
+}
