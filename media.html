@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+    @media (min-width:769px){
+        main{
+            display: grid;
+            grid-template-columns: repeat(3, 20% 40% 40%);
+            gap: 10px;
+            grid-template-rows:150px 250px 150px 100px;
+        }
+        .a1{
+            grid-area: 1/2/2/4;
+        }
+        .b1{
+            grid-area: 2/2/3/3;
+        }
+        .c1{
+            grid-area: 2/3/3/4;
+        }
+        .d1{
+            grid-area: 3/2/4/4;
+        }
+        .e1{
+            grid-area: 1/1/4/2;
+        
+        }
+
+        .f1{
+            grid-area: 4/1/5/4;
+        
+        }
+        section{
+            background-color: rgb(255, 43, 43);
+        }
+        .xp{
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+        }
+    }      
+    @media (max-width:768px){
+        main{
+            display: block;
+           
+        }
+       
+        .e1{
+            visibility:collapse;
+            display: none;
+        }
+
+       
+        section{
+            height: 25vh;
+            background-color: rgb(65, 182, 30);
+            margin-top: 10px;
+        }
+        .xp{
+            display: grid;
+            grid-template-columns: repeat(2,30% 70%);
+        }
+        .xp img{
+            height: 80%;
+        }
+    } 
+    
+    @media print{
+        .a1 h1::after{
+            content: "welcome to my page";
+        }
+        img{
+            visibility: hidden;
+            display: none;
+        }
+        section{
+            border: 3px groove blue;
+        }
+        .xp{
+            display: block;
+           
+        }
+        p{
+            font-size: 1.8em;
+            line-height: 2;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="a1">
+            <h1>wisdom says: </h1>
+        </section>
+        <section class="b1 xp">
+            
+                <img src="image/meandrukky.jpg" alt="marvelous">
+              
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas a error culpa earum ipsa aspernatur repudiandae! Nulla nemo dolorum quibusdam facilis ducimus sint nostrum dignissimos mollitia asperiores! Molestias, doloribus cum.</p></section>
+        <section class="c1 xp">
+            
+                <img src="image/meandrukky.jpg" alt="marvelous">
+                
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas a error culpa earum ipsa aspernatur repudiandae! Nulla nemo dolorum quibusdam facilis ducimus sint nostrum dignissimos mollitia asperiores! Molestias, doloribus cum.</p></section>
+        <section class="d1">4d</section>
+        <section class="e1">5e</section>
+        <section class="f1">6f</section>
+    </main>
+</body>
+</html>
