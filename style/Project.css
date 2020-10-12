@@ -1,0 +1,12 @@
+#title{
+    text-align: center;
+}
+#title:hover{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 300px;
+}
+p:first-of-type{
+    text-align: center;
+    font-weight: lighter;
+}
